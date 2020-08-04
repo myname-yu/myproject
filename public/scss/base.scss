@@ -1,0 +1,29 @@
+.container {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+a {
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+input {
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.clearfix:after {
+    /* 元素不可见 */
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: " ";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
