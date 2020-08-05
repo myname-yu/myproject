@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <mi-header></mi-header>
+    <router-view />
     <mi-footer></mi-footer>
-    <!-- <router-view /> -->
   </div>
 </template>
 
