@@ -19,7 +19,7 @@
         </li>
       </ul>
     </div>
-    <div>
+    <div class="footer-item-middle">
       <div class="footer-help">
         <div>
           <dl>
@@ -104,66 +104,66 @@
             </dd>
           </dl>
         </div>
-        <div class="footer-tel col-3 text-center">
-          <p>400-100-5678</p>
-          <p>8:00-18:00（仅收市话费）</p>
-          <a href="#">人工服务</a>
-          <div>
-            <span>关注小米:</span>
-            <img src="images/footer/wb.png" alt />
-            <img src="images/footer/wx.png" alt />
-          </div>
+      </div>
+      <div class="footer-tel">
+        <p class="footer-tel-number">400-100-5678</p>
+        <p class="footer-tel-time">8:00-18:00（仅收市话费）</p>
+        <a href="#">人工服务</a>
+        <div>
+          <span>关注小米:</span>
+          <img src="images/footer/wb.png" alt />
+          <img src="images/footer/wx.png" alt />
         </div>
       </div>
     </div>
     <div class="footer-info">
-      <ul class="breadcrumb mx-0 px-0">
-        <li class="breadcrumb-item">
+      <ul>
+        <li>
           <a href="#">小米商城</a>
         </li>
-        <li class="breadcrumb-item">
+        <li>
           <a href="#">MIUI</a>
         </li>
-        <li class="breadcrumb-item">
+        <li>
           <a href="#">米家</a>
         </li>
-        <li class="breadcrumb-item">
+        <li>
           <a href="#">米聊</a>
         </li>
-        <li class="breadcrumb-item">
+        <li>
           <a href="#">多看</a>
         </li>
-        <li class="breadcrumb-item">
+        <li>
           <a href="#">游戏</a>
         </li>
-        <li class="breadcrumb-item">
+        <li>
           <a href="#">政企服务</a>
         </li>
-        <li class="breadcrumb-item">
+        <li>
           <a href="#">小米天猫店</a>
         </li>
-        <li class="breadcrumb-item">
+        <li>
           <a href="#">小米集团隐私政策</a>
         </li>
-        <li class="breadcrumb-item">
+        <li>
           <a href="#">小米公司儿童信息保护规则</a>
         </li>
-        <li class="breadcrumb-item">
+        <li>
           <a href="#">小米商城隐私政策</a>
         </li>
-        <li class="breadcrumb-item">
+        <li>
           <a href="#">小米商城用户协议</a>
         </li>
-        <li class="breadcrumb-item">
+        <li>
           <a href="#">问题反馈</a>
         </li>
-        <li class="breadcrumb-item">
+        <li>
           <a href="#">Select Location</a>
         </li>
       </ul>
     </div>
-    <div class="footer-copyright row no-gutters">
-      <p class="col-8">
+    <div class="footer-copyright">
+      <p>
         <a href="#">© mi.com</a> 京ICP证110507号
         <a href="#">京ICP备10046444号</a>
         <a href="#">京公网安备11010802020134号</a>
@@ -181,7 +181,7 @@
         <a href="#">185-0130-1238</a>
         <a href="#">知识产权侵权投诉</a> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
       </p>
-      <div class="col-12">
+      <div>
         <img src="images/footer/truste.png" alt />
         <img src="images/footer/v-logo-2.png" alt />
         <img src="images/footer/v-logo-1.png" alt />
@@ -215,24 +215,101 @@
       }
     }
   }
-  .footer-help {
+  .footer-item-middle {
     display: flex;
     justify-content: space-between;
-    > div {
-      display: flex;
-      justify-content: space-between;
+    padding: 10px 0;
+    margin: 20px 0;
+    .footer-help {
       width: 75%;
-      dt {
-        color: $colorB;
-        font-size: $fontB;
+      > div {
+        display: flex;
+        justify-content: space-between;
+        dt {
+          color: $colorB;
+          font-size: $fontB;
+          margin: 10px 0;
+        }
+        dd {
+          font-size: $fontA;
+          margin: 15px 0;
+          a {
+            color: $colorJ;
+          }
+        }
       }
-      dd {
+    }
+    .footer-tel {
+      text-align: center;
+      width: 25%;
+      padding: 10px 0;
+      .footer-tel-number {
+        color: $colorG;
+        font-size: 22px;
+      }
+      .footer-tel-time {
+        color: $colorF;
         font-size: $fontA;
+        margin: 10px 0;
+      }
+      a {
+        display: inline-block;
+        font-size: $fontA;
+        height: 30px;
+        line-height: 30px;
+        width: 120px;
+        color: $colorG;
+        border: 1px solid;
+        transition: all 0.5s;
+        &:hover {
+          background-color: $colorG;
+          color: $colorA;
+        }
+      }
+      div {
+        color: $colorF;
+        font-size: 12px;
+        img {
+          width: 24px;
+          height: 24px;
+        }
       }
     }
   }
-  .footer-tel {
-    width: 25%;
+  .footer-info {
+    margin-bottom: 20px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      background-color: $colorA;
+      li {
+        + li {
+          &::before {
+            display: inline-block;
+            content: "|";
+            margin: 0 10px;
+          }
+          a {
+            color: $colorJ;
+            font-size: $fontA;
+          }
+        }
+      }
+    }
+  }
+  .footer-copyright {
+    p {
+      width: 80%;
+      font-size: $fontB;
+      color: $colorD;
+      margin-bottom: 10px;
+      a {
+        color: $colorJ;
+      }
+    }
+    img {
+      vertical-align: middle;
+    }
   }
 }
 </style>
