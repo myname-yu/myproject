@@ -4,7 +4,8 @@ import Home from '../views/Home.vue'
 import Index from '../views/Index.vue'
 import List from '../views/List.vue'
 import Cart from '../views/Cart.vue'
-
+import Orderlist from '../views/Orderlist.vue'
+import Addlist from '../views/Addlist.vue'
 Vue.use(VueRouter)
 
 const routes = [{
@@ -44,6 +45,22 @@ const routes = [{
         // which is lazy-loaded when the route is visited.
         component: () =>
             import ( /* webpackChunkName: "about" */ '../views/Cart.vue')
+    }, {
+        path: '/orderlist',
+        name: Orderlist,
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/Orderlist.vue')
+    }, {
+        path: '/addlist',
+        name: Addlist,
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/Addlist.vue')
     }
 ]
 
