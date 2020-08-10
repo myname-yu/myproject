@@ -105,6 +105,29 @@
         </div>
       </div>
     </div>
+    <div class="modal-main">
+      <div class="modal">
+        <div class="modal-top">
+          <span>添加收货地址</span>
+          <span class="close">×</span>
+        </div>
+        <div class="modal-middle">
+          <div class="name-phone">
+            <input type="text" placeholder="姓名" id="receiver" />
+            <input type="text" placeholder="手机号" maxlength="11" id="cellphone" />
+          </div>
+          <div class="addr-list"></div>
+          <div class="addr-spec">
+            <textarea name cols="30" rows="3" placeholder="详细地址" id="address" maxlength="20"></textarea>
+          </div>
+        </div>
+        <div class="modal-bottom">
+          <a href="javascript:;" class="sure-btn">确定</a>
+          <a href="javascript:;" class="close-btn">取消</a>
+        </div>
+      </div>
+      <div class="modal-mask"></div>
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>

@@ -2,7 +2,7 @@
   <div id="app">
     <!-- <mi-header></mi-header> -->
     <router-view />
-    <mi-footer></mi-footer>
+    <!-- <mi-footer></mi-footer> -->
   </div>
 </template>
 

@@ -6,9 +6,19 @@ import List from '../views/List.vue'
 import Cart from '../views/Cart.vue'
 import Orderlist from '../views/Orderlist.vue'
 import Addlist from '../views/Addlist.vue'
+import Reset from '../views/Reset.vue'
+import Payment from '../views/Payment.vue'
 Vue.use(VueRouter)
 
 const routes = [{
+        path: '/payment',
+        name: 'Payment',
+        component: Payment
+    }, {
+        path: '/reset',
+        name: 'Reset',
+        component: Reset
+    }, {
         path: '/',
         name: 'Home',
         component: Home

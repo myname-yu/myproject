@@ -30,5 +30,5 @@
 </template>
 
 <style lang="scss">
-@import "../public/scss/base.scss";
+@import "../../public/scss/color.scss";
 </style>
